@@ -2,19 +2,13 @@ import './index.scss'
 import Logo from '../../assets/images/Borcelle.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faLinkedin,
   faGithub,
-  faYoutube,
-  faSkype,
   faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faEnvelope, faSuitcase } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
-import { useEffect } from 'react'
 
 const Sidebar = () => {
-  useEffect(() => { console.log('.')}, [])
-  
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
