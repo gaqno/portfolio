@@ -13,6 +13,7 @@ const Home = () => {
         <Typewriter
           onInit={(typewritter) => {
             typewritter
+              .pauseFor(1000)
               .typeString('Welcome!')
               .pauseFor(2500)
               .deleteAll()
@@ -20,27 +21,28 @@ const Home = () => {
               .start()
           }}
         />
+        <br />
         <Typewriter
           onInit={(typewritter) => {
             typewritter
-              .pauseFor(10000)
+              .pauseFor(11000)
               .typeString('JavaScript, TypeScript.')
               .pauseFor(1000)
               .deleteAll()
               .typeString("React, React Native, NextJS, Angular..")
               .pauseFor(1000)
               .deleteAll()
-              .typeString('NestJS, Node.')
+              .typeString('NestJS, Node, ORM, Database')
               .pauseFor(1000)
               .deleteAll()
-              .typeString("Open to work!")
+              .typeString("Open for work!")
               .pauseFor(1000)
               .deleteAll()
               .typeString("Contact bellow! :)")
               .start()
           }}
         />
-      <Link to='/contact' className="flat-button"> CONTACT ME  </Link>
+      <Link to='/contact' className="flat-button"> CONTACT ME </Link>
       </div>
       <Logo />
     </div>
